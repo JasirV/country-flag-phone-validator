@@ -1,5 +1,5 @@
-import countries from '../data/countries.json';
-import { errors } from '../errors/errorMessages';
+import countries from '../data/countries.json' assert { type: 'json' };
+import { errors } from '../errors/errorMessages.js';
 
 export function validatePhoneNumber(dialCode, phone) {
   const country = countries.find(c => c.dialCode === dialCode);
