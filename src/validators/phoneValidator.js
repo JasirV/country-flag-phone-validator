@@ -1,17 +1,14 @@
-import countries from '../data/countries.json' assert { type: 'json' };
-import { errors } from '../errors/errorMessages.js';
+import countries from "../data/countries.json" assert { type: "json" };
+import { errors } from "../errors/errorMessages.js";
 
 export function validatePhoneNumber(dialCode, phone) {
-  const country = countries.find(c => c.dialCode === dialCode);
+  const country = countries.find((c) => c.dialCode === dialCode);
 
   if (!country) {
     return { valid: false, error: errors.INVALID_DIAL_CODE };
   }
 
-  if (
-    phone.length < country.minLength ||
-    phone.length > country.maxLength
-  ) {
+  if (phone.length < country.minLength || phone.length > country.maxLength) {
     return { valid: false, error: errors.INVALID_LENGTH };
   }
 
@@ -23,6 +20,6 @@ export function validatePhoneNumber(dialCode, phone) {
   return {
     valid: true,
     country: country.name,
-    iso2: country.iso2
+    iso2: country.iso2,
   };
 }
