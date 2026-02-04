@@ -1,0 +1,15 @@
+{
+  "name": "country-flags-phone-validator-pro",
+  "version": "1.0.0",
+  "description": "Country dial code, phone validation & SVG flags",
+  "main": "src/index.js",
+  "type": "module",
+  "author": "Muhammed Jasir V",
+  "license": "MIT",
+  "keywords": [
+    "phone-validation",
+    "country-code",
+    "dial-code",
+    "svg-flags"
+  ]
+}
