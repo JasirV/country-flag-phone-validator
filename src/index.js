@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import countries from './data/countries.json';
+import countries from './data/countries.json' assert { type: "json" };
 import { validatePhoneNumber } from './validators/phoneValidator.js';
 
 export function getCountries() {
