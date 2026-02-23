@@ -1,6 +1,6 @@
 {
   "name": "country-flags-phone-validator-pro",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Country dial code, phone validation & SVG flags",
   "main": "src/index.js",
   "type": "module",
